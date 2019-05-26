@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2019_05_26_173352) do
 
   create_table "people", force: :cascade do |t|
     t.string "type"
+    t.integer "address_id"
     t.string "name"
     t.string "cpf"
     t.string "phoneNumber"
@@ -35,6 +36,7 @@ ActiveRecord::Schema.define(version: 2019_05_26_173352) do
     t.date "registrationDate"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["address_id"], name: "index_people_on_address_id"
   end
 
 end
