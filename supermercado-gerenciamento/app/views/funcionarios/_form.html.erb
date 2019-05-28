@@ -1,0 +1,82 @@
+<%= form_with(model: funcionario, local: true) do |form| %>
+  <% if funcionario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(funcionario.errors.count, "error") %> prohibited this funcionario from being saved:</h2>
+
+      <ul>
+      <% funcionario.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Nome %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :CPF %>
+    <%= form.text_field :cpf %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Data_Nascimento %>
+    <%= form.date_select :dataNascimento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Numéro_do_Telefone %>
+    <%= form.text_field :numTelefone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Sálario %>
+    <%= form.text_field :salario %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Cargo %>
+    <%= form.select("cargo",['Adiministrador','Operador de caixa'],{include_blank: "selecione"})%>
+  </div>
+
+  <div class="field">
+    <%= form.label :Data_de_Adimissão %>
+    <%= form.date_select :dataAdimissao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Data_de_Pagamento %>
+    <%= form.date_select :dataPagamento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Bairro %>
+    <%= form.text_field :bairro %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Nome_da_Rua %>
+    <%= form.text_field :nomeRua %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Nome_da_Cidade %>
+    <%= form.text_field :nomeCidade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Cep %>
+    <%= form.text_field :cep %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Número_da_Residência %>
+    <%= form.text_field :numResidencia %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
