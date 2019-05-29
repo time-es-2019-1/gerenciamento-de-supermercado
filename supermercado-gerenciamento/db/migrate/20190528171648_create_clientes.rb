@@ -6,12 +6,13 @@ class CreateClientes < ActiveRecord::Migration[5.2]
       t.date :dataNascimento
       t.string :numTelefone
       t.float :limiteCredito
-      t.date :dataCadastro
+      t.date  :dataCadastro
       t.string :bairro
       t.string :nomeRua
       t.string :nomeCidade
       t.string :cep
       t.string :numResidencia
+      t.belongs_to :funcionario, index: true
 
       t.timestamps
     end

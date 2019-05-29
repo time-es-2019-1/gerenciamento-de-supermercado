@@ -1,7 +1,7 @@
 <%= form_with(model: cliente, local: true) do |form| %>
   <% if cliente.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(cliente.errors.count, "error") %> prohibited this cliente from being saved:</h2>
+    <div id="Explicação do erro">
+      <h2><%= pluralize(cliente.errors.count, "erro") %>Proibi o cliente de ser salvo:</h2>
 
       <ul>
       <% cliente.errors.full_messages.each do |message| %>
@@ -65,10 +65,12 @@
     <%= form.label :Número_da_Residência %>
     <%= form.text_field :numResidencia %>
   </div>
+
   <div class="field">
     <%= form.label :funcionario_id %>
     <%= form.collection_select(:funcionario_id , Funcionario.all,:id, :cpf, prompt: true)%>
   </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
