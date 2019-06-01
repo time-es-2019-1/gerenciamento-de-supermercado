@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  cpf: MyString
+  dataNascimento: 2019-05-28
+  numTelefone: MyString
+  limiteCredito: 1.5
+  dataCadastro: 2019-05-28
+  bairro: MyString
+  nomeRua: MyString
+  nomeCidade: MyString
+  cep: MyString
+  numResidencia: MyString
+
+two:
+  nome: MyString
+  cpf: MyString
+  dataNascimento: 2019-05-28
+  numTelefone: MyString
+  limiteCredito: 1.5
+  dataCadastro: 2019-05-28
+  bairro: MyString
+  nomeRua: MyString
+  nomeCidade: MyString
+  cep: MyString
+  numResidencia: MyString
