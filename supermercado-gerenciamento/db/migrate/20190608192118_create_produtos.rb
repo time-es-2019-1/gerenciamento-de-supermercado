@@ -4,7 +4,7 @@ class CreateProdutos < ActiveRecord::Migration[5.2]
       t.string :codigo
       t.string :marca
       t.string :categoria
-      t.string :contato_fornecedor
+      t.text :descricao
       t.float :preco_venda
       t.float :preco_compra
 

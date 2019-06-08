@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_03_183539) do
+ActiveRecord::Schema.define(version: 2019_06_08_192947) do
 
   create_table "clientes", force: :cascade do |t|
     t.string "nome"
@@ -56,15 +56,38 @@ ActiveRecord::Schema.define(version: 2019_06_03_183539) do
     t.index ["produto_id"], name: "index_item_estoques_on_produto_id"
   end
 
+  create_table "item_vendas", force: :cascade do |t|
+    t.integer "produto_id"
+    t.integer "venda_id"
+    t.integer "quantidade"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["produto_id"], name: "index_item_vendas_on_produto_id"
+    t.index ["venda_id"], name: "index_item_vendas_on_venda_id"
+  end
+
   create_table "produtos", force: :cascade do |t|
     t.string "codigo"
     t.string "marca"
     t.string "categoria"
-    t.string "contato_fornecedor"
+    t.text "descricao"
     t.float "preco_venda"
     t.float "preco_compra"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "vendas", force: :cascade do |t|
+    t.string "codigo"
+    t.integer "cliente_id"
+    t.integer "funcionario_id"
+    t.float "valor_total"
+    t.float "valor_pago"
+    t.date "data"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["cliente_id"], name: "index_vendas_on_cliente_id"
+    t.index ["funcionario_id"], name: "index_vendas_on_funcionario_id"
   end
 
 end
