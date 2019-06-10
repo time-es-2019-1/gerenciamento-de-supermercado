@@ -1,7 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5dc7b016-6441-43b0-b2b9-bc1ecb5bed78" name="Default Changelist" comment="" />
+    <list default="true" id="5dc7b016-6441-43b0-b2b9-bc1ecb5bed78" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/clientes_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/funcionarios_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/item_estoques_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/item_vendas_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/produtos_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/vendas_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/application_record.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/cliente.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/concerns/.keep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/funcionario.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/item_estoque.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/item_venda.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/produto.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/venda.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/clientes/_cliente.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/clientes/_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/clientes/edit.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/clientes/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/clientes/index.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/clientes/new.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/clientes/show.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/clientes/show.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/funcionarios/_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/funcionarios/_funcionario.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/funcionarios/edit.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/funcionarios/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/funcionarios/index.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/funcionarios/new.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/funcionarios/show.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/funcionarios/show.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/item_estoques/_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/item_estoques/edit.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/item_estoques/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/item_estoques/new.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/item_estoques/show.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/item_vendas/_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/item_vendas/_item_venda.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/item_vendas/edit.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/item_vendas/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/item_vendas/index.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/item_vendas/new.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/item_vendas/show.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/item_vendas/show.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/mailer.text.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/produtos/_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/produtos/_produto.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/produtos/edit.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/produtos/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/produtos/index.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/produtos/new.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/produtos/show.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/produtos/show.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/vendas/_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/vendas/_venda.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/vendas/edit.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/vendas/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/vendas/index.json.jbuilder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/vendas/new.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/vendas/show.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/vendas/show.json.jbuilder" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/log/" />
@@ -16,7 +82,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/supermercado_gerenciamento@Development__supermercado_gerenciamento.rcov" NAME="Development: supermercado-gerenciamento Coverage Results" MODIFIED="1560022374521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="supermercado-gerenciamento" />
+    <SUITE FILE_PATH="coverage/supermercado_gerenciamento@db_migrate__supermercado_gerenciamento.rcov" NAME="db:migrate: supermercado-gerenciamento Coverage Results" MODIFIED="1560176476869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="supermercado-gerenciamento" />
+    <SUITE FILE_PATH="coverage/supermercado_gerenciamento@db_drop__unsafe__supermercado_gerenciamento.rcov" NAME="db:drop:_unsafe: supermercado-gerenciamento Coverage Results" MODIFIED="1560176459995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="supermercado-gerenciamento" />
+    <SUITE FILE_PATH="coverage/supermercado_gerenciamento@db_seed__supermercado_gerenciamento.rcov" NAME="db:seed: supermercado-gerenciamento Coverage Results" MODIFIED="1560176494168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="supermercado-gerenciamento" />
+    <SUITE FILE_PATH="coverage/supermercado_gerenciamento@Development__supermercado_gerenciamento.rcov" NAME="Development: supermercado-gerenciamento Coverage Results" MODIFIED="1560179155880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="supermercado-gerenciamento" />
+    <SUITE FILE_PATH="coverage/supermercado_gerenciamento@rails_server.rcov" NAME="rails server Coverage Results" MODIFIED="1560176509655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="supermercado-gerenciamento" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -76,7 +146,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1384" />
@@ -88,6 +158,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -95,12 +167,15 @@
               <item name="supermercado-gerenciamento" type="b2602c69:ProjectViewProjectNode" />
               <item name="supermercado-gerenciamento" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="supermercado-gerenciamento" type="b2602c69:ProjectViewProjectNode" />
+              <item name="supermercado-gerenciamento" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -235,21 +310,22 @@
       <workItem from="1559087031989" duration="1841000" />
       <workItem from="1559089265347" duration="582000" />
       <workItem from="1560021311160" duration="2064000" />
+      <workItem from="1560178964261" duration="20000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16122000" />
+    <option name="totallyTimeSpent" value="16173000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1107" height="629" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49716714" visible="true" weight="0.31518623" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49716714" visible="true" weight="0.3260212" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24966443" />
       <window_info id="Favorites" order="2" sideWeight="0.5028329" side_tool="true" weight="0.2590604" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19114688" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19114688" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -390,13 +466,6 @@
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/funcionario.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/clientes/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -466,22 +535,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190603183130_create_produtos.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190603183130_create_produtos.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20190608192118_create_produtos.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/item_estoque.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190608192527_create_item_vendas.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190608192527_create_item_vendas.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20190608192819_create_vendas.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -528,6 +589,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/funcionario.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>

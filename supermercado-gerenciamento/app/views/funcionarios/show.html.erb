@@ -41,28 +41,8 @@
 </p>
 
 <p>
-  <strong>Bairro:</strong>
-  <%= @funcionario.bairro %>
-</p>
-
-<p>
-  <strong>Nomerua:</strong>
-  <%= @funcionario.nomeRua %>
-</p>
-
-<p>
-  <strong>Nomecidade:</strong>
-  <%= @funcionario.nomeCidade %>
-</p>
-
-<p>
-  <strong>Cep:</strong>
-  <%= @funcionario.cep %>
-</p>
-
-<p>
-  <strong>Numresidencia:</strong>
-  <%= @funcionario.numResidencia %>
+  <strong>Endereco:</strong>
+  <%= @cliente.endereco.to_s%>
 </p>
 
 <%= link_to 'Editar', edit_funcionario_path(@funcionario) %> |

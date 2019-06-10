@@ -7,12 +7,8 @@ class CreateClientes < ActiveRecord::Migration[5.2]
       t.string :numTelefone
       t.float :limiteCredito
       t.date  :dataCadastro
-      t.string :bairro
-      t.string :nomeRua
-      t.string :nomeCidade
-      t.string :cep
-      t.string :numResidencia
       t.belongs_to :funcionario, index: true
+      t.references :endereco, foreign_key:true
 
       t.timestamps
     end

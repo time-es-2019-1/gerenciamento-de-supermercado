@@ -5,3 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Endereco.create(bairro:"Zona rural", rua:"sitio cafofas", cidade:'capoeiras', cep:'55365', numero:'45')

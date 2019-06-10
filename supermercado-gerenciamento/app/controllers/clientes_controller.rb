@@ -15,6 +15,8 @@ class ClientesController < ApplicationController
   # GET /clientes/new
   def new
     @cliente = Cliente.new
+    @funcionarios = Funcionario.all
+    @enderecos = Endereco.all
   end
 
   # GET /clientes/1/edit
@@ -69,6 +71,6 @@ class ClientesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cliente_params
-      params.require(:cliente).permit(:nome, :cpf, :dataNascimento, :numTelefone, :limiteCredito, :dataCadastro, :bairro, :nomeRua, :nomeCidade, :cep, :numResidencia,:funcionario_id)
+      params.require(:cliente).permit(:nome, :cpf, :dataNascimento, :numTelefone, :limiteCredito, :dataCadastro, :bairro, :nomeRua, :nomeCidade, :cep, :numResidencia,:funcionario_id, :endereco_id)
     end
 end

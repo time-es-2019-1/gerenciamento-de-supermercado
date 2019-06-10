@@ -15,6 +15,7 @@ class FuncionariosController < ApplicationController
   # GET /funcionarios/new
   def new
     @funcionario = Funcionario.new
+    @enderecos = Endereco.all
   end
 
   # GET /funcionarios/1/edit
@@ -69,6 +70,6 @@ class FuncionariosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def funcionario_params
-      params.require(:funcionario).permit(:nome, :cpf, :dataNascimento, :numTelefone, :salario, :cargo, :dataAdimissao, :dataPagamento, :bairro, :nomeRua, :nomeCidade, :cep, :numResidencia)
+      params.require(:funcionario).permit(:nome, :cpf, :dataNascimento, :numTelefone, :salario, :cargo, :dataAdimissao, :dataPagamento, :endereco_id)
     end
 end

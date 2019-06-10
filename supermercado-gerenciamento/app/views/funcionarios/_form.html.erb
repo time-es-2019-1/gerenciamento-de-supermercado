@@ -52,28 +52,8 @@
   </div>
 
   <div class="field">
-    <%= form.label :Bairro %>
-    <%= form.text_field :bairro %>
-  </div>
-
-  <div class="field">
-    <%= form.label :Nome_da_Rua %>
-    <%= form.text_field :nomeRua %>
-  </div>
-
-  <div class="field">
-    <%= form.label :Nome_da_Cidade %>
-    <%= form.text_field :nomeCidade %>
-  </div>
-
-  <div class="field">
-    <%= form.label :Cep %>
-    <%= form.text_field :cep %>
-  </div>
-
-  <div class="field">
-    <%= form.label :Número_da_Residência %>
-    <%= form.text_field :numResidencia %>
+    <%= form.label :endereco_id %>
+    <%= form.collection_select(:endereco_id , @enderecos, :id, :to_s, prompt: true)%>
   </div>
 
   <div class="actions">
