@@ -5,11 +5,14 @@ class FuncionariosController < ApplicationController
   # GET /funcionarios.json
   def index
     @funcionarios = Funcionario.all
+    @enderecos = Endereco.all
   end
 
   # GET /funcionarios/1
   # GET /funcionarios/1.json
   def show
+    @funcionarios = Funcionario.all
+    @enderecos = Endereco.all
   end
 
   # GET /funcionarios/new
@@ -20,6 +23,7 @@ class FuncionariosController < ApplicationController
 
   # GET /funcionarios/1/edit
   def edit
+    @enderecos = Endereco.all
   end
 
   # POST /funcionarios
