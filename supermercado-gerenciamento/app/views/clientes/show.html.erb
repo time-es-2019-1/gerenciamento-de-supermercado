@@ -31,32 +31,13 @@
 </p>
 
 <p>
-  <strong>Bairro:</strong>
-  <%= @cliente.bairro %>
-</p>
-
-<p>
-  <strong>Nomerua:</strong>
-  <%= @cliente.nomeRua %>
-</p>
-
-<p>
-  <strong>Nomecidade:</strong>
-  <%= @cliente.nomeCidade %>
-</p>
-
-<p>
-  <strong>Cep:</strong>
-  <%= @cliente.cep %>
-</p>
-
-<p>
-  <strong>Numresidencia:</strong>
-  <%= @cliente.numResidencia %>
-</p>
-<p>
   <strong>funcionario_id:</strong>
   <%= @cliente.funcionario_id%>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @cliente.endereco.to_s%>
 </p>
 
 <%= link_to 'Editar', edit_cliente_path(@cliente) %> |

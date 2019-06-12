@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codigo: MyString
+  cliente: one
+  funcionario: one
+  valor_total: 1.5
+  valor_pago: 1.5
+  data: 2019-06-08
+
+two:
+  codigo: MyString
+  cliente: two
+  funcionario: two
+  valor_total: 1.5
+  valor_pago: 1.5
+  data: 2019-06-08

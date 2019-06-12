@@ -9,11 +9,7 @@ class CreateFuncionarios < ActiveRecord::Migration[5.2]
       t.string :cargo
       t.date :dataAdimissao
       t.date :dataPagamento
-      t.string :bairro
-      t.string :nomeRua
-      t.string :nomeCidade
-      t.string :cep
-      t.string :numResidencia
+      t.references :endereco, foreign_key: true
 
       t.timestamps
     end

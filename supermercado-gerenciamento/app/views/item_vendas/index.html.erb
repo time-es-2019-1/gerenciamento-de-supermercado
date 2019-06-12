@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Item Vendas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Produto</th>
+      <th>Venda</th>
+      <th>Quantidade</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @item_vendas.each do |item_venda| %>
+      <tr>
+        <td><%= item_venda.produto %></td>
+        <td><%= item_venda.venda %></td>
+        <td><%= item_venda.quantidade %></td>
+        <td><%= link_to 'Show', item_venda %></td>
+        <td><%= link_to 'Edit', edit_item_venda_path(item_venda) %></td>
+        <td><%= link_to 'Destroy', item_venda, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Item Venda', new_item_venda_path %>
