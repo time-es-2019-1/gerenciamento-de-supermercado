@@ -18,18 +18,17 @@ class FuncionariosController < ApplicationController
   # GET /funcionarios/new
   def new
     @funcionario = Funcionario.new
-    @enderecos = Endereco.all
   end
 
   # GET /funcionarios/1/edit
   def edit
-    @enderecos = Endereco.all
   end
 
   # POST /funcionarios
   # POST /funcionarios.json
   def create
     @funcionario = Funcionario.new(funcionario_params)
+    @enderecos = Endereco.all
 
     respond_to do |format|
       if @funcionario.save

@@ -63,18 +63,17 @@ ActiveRecord::Schema.define(version: 2019_06_10_002323) do
   end
 
   create_table "produtos", force: :cascade do |t|
-    t.string "codigo"
     t.string "marca"
     t.string "categoria"
     t.text "descricao"
     t.float "preco_venda"
     t.float "preco_compra"
+    t.integer "quantidade"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "vendas", force: :cascade do |t|
-    t.string "codigo"
     t.integer "cliente_id"
     t.integer "funcionario_id"
     t.float "valor_total"

@@ -13,7 +13,8 @@ class Cliente < ApplicationRecord
             uniqueness:true
   validates :numTelefone, presence: { message: "nao pode ser em branco"},
             length: { is:11, message:"deve ter 11 digitos"},
-            numericality: { only_integer:true,message:"deve apenas numeros" }
+            numericality: { only_integer:true,message:"deve apenas numeros" },
+            uniqueness: {message: "Deve ser único"}
   validates :limiteCredito, presence: { message: "nao pode ser em branco"},
             numericality: { only_integer: true ,message:"deve apenas numeros"}
   validates :funcionario_id, :endereco_id, presence: {message: "Deve ser selecionado"}

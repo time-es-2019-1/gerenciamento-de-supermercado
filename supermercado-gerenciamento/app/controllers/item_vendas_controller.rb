@@ -5,6 +5,7 @@ class ItemVendasController < ApplicationController
   # GET /item_vendas.json
   def index
     @item_vendas = ItemVenda.all
+    @produtos = Produto.all
   end
 
   # GET /item_vendas/1
@@ -24,11 +25,16 @@ class ItemVendasController < ApplicationController
   # POST /item_vendas
   # POST /item_vendas.json
   def create
-    @item_venda = ItemVenda.new(item_venda_params)
-
+    #@item_venda = ItemVenda.new(item_venda_params)
+    @venda = Venda.order("created_at").last
+    @item_venda = @venda.item_vendas.create(item_venda_params)
+    @venda.valor_total += @item_venda.produto.preco_venda * @item_venda.quantidade
+    @item_venda.venda_id = @venda.id
+    @venda.save
     respond_to do |format|
       if @item_venda.save
-        format.html { redirect_to @item_venda, notice: 'Item venda was successfully created.' }
+        format.html {redirect_to new_item_venda_path}
+        #format.html { redirect_to @item_venda, notice: 'Item venda was successfully created.' }
         format.json { render :show, status: :created, location: @item_venda }
       else
         format.html { render :new }

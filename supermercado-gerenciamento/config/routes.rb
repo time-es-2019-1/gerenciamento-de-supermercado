@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :enderecos
-  resources :vendas
+  resources :vendas do
+    resources :item_vendas
+  end
   resources :item_vendas
   resources :item_estoques
   resources :models

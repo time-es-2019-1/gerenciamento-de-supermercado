@@ -25,10 +25,13 @@ class VendasController < ApplicationController
   # POST /vendas.json
   def create
     @venda = Venda.new(venda_params)
+    @venda.valor_total = 0
 
     respond_to do |format|
       if @venda.save
-        format.html { redirect_to @venda, notice: 'Venda was successfully created.' }
+        format.html {redirect_to new_item_venda_path}
+        #format.html {render 'item_vendas/form', venda: @venda}
+        #format.html { redirect_to @venda, notice: 'Venda was successfully created.' }
         format.json { render :show, status: :created, location: @venda }
       else
         format.html { render :new }

@@ -6,4 +6,4 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Endereco.create(bairro:"Zona rural", rua:"sitio cafofas", cidade:'capoeiras', cep:'55365', numero:'45')
-Produto.create(codigo:'12345', marca:'ouro verde', categoria:'café', descricao:'200g', preco_venda:3.40, preco_compra:2.80)
+Produto.create(marca:'ouro verde', categoria:'café', descricao:'200g', preco_venda:3.40, preco_compra:2.80, quantidade:4)

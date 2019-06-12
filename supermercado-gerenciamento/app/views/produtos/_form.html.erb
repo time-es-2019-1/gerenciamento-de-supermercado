@@ -12,11 +12,6 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :codigo %>
-    <%= form.text_field :codigo %>
-  </div>
-
-  <div class="field">
     <%= form.label :marca %>
     <%= form.text_field :marca %>
   </div>
@@ -39,6 +34,11 @@
   <div class="field">
     <%= form.label :preco_compra %>
     <%= form.text_field :preco_compra %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantidade %>
+    <%= form.number_field :quantidade %>
   </div>
 
   <div class="actions">
