@@ -43,12 +43,12 @@
 
   <div class="field">
     <%= form.label :funcionario_id %>
-    <%= form.collection_select(:funcionario_id , @funcionarios, :id, :cpf, prompt: true)%>
+    <%= form.collection_select(:funcionario_id , Funcionario.all, :id, :cpf, prompt: true)%>
   </div>
 
   <div class="field">
     <%= form.label :endereco_id %>
-    <%= form.collection_select(:endereco_id , @enderecos, :id, :to_s, prompt: true)%>
+    <%= form.collection_select(:endereco_id , Endereco.all, :id, :to_s, prompt: true)%>
   </div>
 
   <div class="actions">

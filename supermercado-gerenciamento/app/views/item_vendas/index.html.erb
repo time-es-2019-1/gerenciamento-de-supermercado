@@ -15,7 +15,7 @@
   <tbody>
     <% @item_vendas.each do |item_venda| %>
       <tr>
-        <td><%= item_venda.produto %></td>
+        <td><%= item_venda.produto.to_s %></td>
         <td><%= item_venda.venda %></td>
         <td><%= item_venda.quantidade %></td>
         <td><%= link_to 'Show', item_venda %></td>

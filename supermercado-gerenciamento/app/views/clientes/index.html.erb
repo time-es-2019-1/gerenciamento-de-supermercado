@@ -12,6 +12,7 @@
       <th>Limite de credito: </th>
       <th>Data do cadastro: </th>
       <th>funcionario_id</th>
+      <th>Endereço: </th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -26,7 +27,7 @@
         <td><%= cliente.limiteCredito %></td>
         <td><%= cliente.dataCadastro %></td>
         <td><%= cliente.funcionario_id%></td>
-        <td><%= cliente.endereco_id%></td>
+        <td><%= cliente.endereco.to_s%></td>
         <td><%= link_to 'Vizualizar', cliente %></td>
         <td><%= link_to 'Editar', edit_cliente_path(cliente) %></td>
         <td><%= link_to 'remover', cliente, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>

@@ -1,11 +1,6 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Codigo:</strong>
-  <%= @produto.codigo %>
-</p>
-
-<p>
   <strong>Marca:</strong>
   <%= @produto.marca %>
 </p>
@@ -28,6 +23,11 @@
 <p>
   <strong>Preco compra:</strong>
   <%= @produto.preco_compra %>
+</p>
+
+<p>
+  <strong>Quantidade:</strong>
+  <%= @produto.quantidade %>
 </p>
 
 <%= link_to 'Edit', edit_produto_path(@produto) %> |

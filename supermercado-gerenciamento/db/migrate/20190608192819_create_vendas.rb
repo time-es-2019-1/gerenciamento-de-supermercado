@@ -1,7 +1,6 @@
 class CreateVendas < ActiveRecord::Migration[5.2]
   def change
     create_table :vendas do |t|
-      t.string :codigo
       t.references :cliente, foreign_key: true
       t.references :funcionario, foreign_key: true
       t.float :valor_total

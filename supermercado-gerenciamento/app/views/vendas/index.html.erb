@@ -5,7 +5,6 @@
 <table>
   <thead>
     <tr>
-      <th>Codigo</th>
       <th>Cliente</th>
       <th>Funcionario</th>
       <th>Valor total</th>
@@ -18,12 +17,15 @@
   <tbody>
     <% @vendas.each do |venda| %>
       <tr>
-        <td><%= venda.codigo %></td>
         <td><%= venda.cliente %></td>
         <td><%= venda.funcionario %></td>
         <td><%= venda.valor_total %></td>
         <td><%= venda.valor_pago %></td>
         <td><%= venda.data %></td>
+        <td><%= venda.item_vendas.each do |item| %>
+            <li><% item.produto.to_s %></li>
+          <% end %>
+            </td>
         <td><%= link_to 'Show', venda %></td>
         <td><%= link_to 'Edit', edit_venda_path(venda) %></td>
         <td><%= link_to 'Destroy', venda, method: :delete, data: { confirm: 'Are you sure?' } %></td>
