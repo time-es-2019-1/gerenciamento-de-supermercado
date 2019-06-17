@@ -42,8 +42,11 @@
 
 <p>
   <strong>Endereco:</strong>
-  <%= @funcionario.endereco.to_s%>
+  <%= @funcionario.endereco_id %>
 </p>
+
+
+
 
 <%= link_to 'Editar', edit_funcionario_path(@funcionario) %> |
 <%= link_to 'Voltar', funcionarios_path %>

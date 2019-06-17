@@ -53,7 +53,9 @@
 
   <div class="field">
     <%= form.label :endereco_id %>
-    <%= form.collection_select(:endereco_id , Endereco.all, :id, :to_s, prompt: true)%>
+
+    <%= form.collection_select(:endereco_id , Endereco.all, :id, :id, prompt: true)%>
+
   </div>
 
   <div class="actions">

@@ -1,17 +1,18 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  codigo: MyString
-  marca: MyString
-  categoria: MyString
-  descricao: MyText
-  preco_venda: 1.5
-  preco_compra: 1.5
+
+  nome: MyString
+  quantidade: 
+  precoCompra: 1.5
+  precoVenda: 1.5
+  dataCompra: 2019-06-16
+  dataVencimento: 2019-06-16
 
 two:
-  codigo: MyString
-  marca: MyString
-  categoria: MyString
-  descricao: MyText
-  preco_venda: 1.5
-  preco_compra: 1.5
+  nome: MyString
+  quantidade: 
+  precoCompra: 1.5
+  precoVenda: 1.5
+  dataCompra: 2019-06-16
+  dataVencimento: 2019-06-16

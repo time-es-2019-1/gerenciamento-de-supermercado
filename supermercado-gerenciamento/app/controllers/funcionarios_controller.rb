@@ -1,34 +1,38 @@
 class FuncionariosController < ApplicationController
   before_action :set_funcionario, only: [:show, :edit, :update, :destroy]
 
-  # GET /funcionarios
-  # GET /funcionarios.json
+
+  # GET /clientes
+  # GET /clientes.json
   def index
-    @funcionarios = Funcionario.all
-    @enderecos = Endereco.all
+
+    @funcionario =Funcionario.all
+
   end
 
-  # GET /funcionarios/1
-  # GET /funcionarios/1.json
+  # GET /clientes/1
+  # GET /clientes/1.json
   def show
     @funcionarios = Funcionario.all
     @enderecos = Endereco.all
   end
 
-  # GET /funcionarios/new
+  # GET /clientes/new
   def new
+
     @funcionario = Funcionario.new
   end
 
-  # GET /funcionarios/1/edit
+  # GET /clientes/1/edit
   def edit
   end
 
-  # POST /funcionarios
-  # POST /funcionarios.json
+  # POST /clientes
+  # POST /clientes.json
   def create
     @funcionario = Funcionario.new(funcionario_params)
-    @enderecos = Endereco.all
+
+    @funcionario.discriminador ="Funcionario"
 
     respond_to do |format|
       if @funcionario.save
@@ -41,8 +45,8 @@ class FuncionariosController < ApplicationController
     end
   end
 
-  # PATCH/PUT /funcionarios/1
-  # PATCH/PUT /funcionarios/1.json
+  # PATCH/PUT /clientes/1
+  # PATCH/PUT /clientes/1.json
   def update
     respond_to do |format|
       if @funcionario.update(funcionario_params)
@@ -55,8 +59,8 @@ class FuncionariosController < ApplicationController
     end
   end
 
-  # DELETE /funcionarios/1
-  # DELETE /funcionarios/1.json
+  # DELETE /clientes/1
+  # DELETE /clientes/1.json
   def destroy
     @funcionario.destroy
     respond_to do |format|
@@ -66,13 +70,15 @@ class FuncionariosController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_funcionario
-      @funcionario = Funcionario.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def funcionario_params
-      params.require(:funcionario).permit(:nome, :cpf, :dataNascimento, :numTelefone, :salario, :cargo, :dataAdimissao, :dataPagamento, :endereco_id)
-    end
-end
+  def set_funcionario
+    @funcionario = Funcionario.find(params[:id])
+  end
+
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def funcionario_params
+    params.require(:funcionario).permit(:nome, :cpf, :dataNascimento, :numTelefone,:salario,:cargo, :dataAdimissao, :dataPagamento,:endereco_id)
+  end
+  end

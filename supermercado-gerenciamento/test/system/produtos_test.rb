@@ -14,12 +14,12 @@ class ProdutosTest < ApplicationSystemTestCase
     visit produtos_url
     click_on "New Produto"
 
-    fill_in "Categoria", with: @produto.categoria
-    fill_in "Codigo", with: @produto.codigo
-    fill_in "Descricao", with: @produto.descricao
-    fill_in "Marca", with: @produto.marca
-    fill_in "Preco compra", with: @produto.preco_compra
-    fill_in "Preco venda", with: @produto.preco_venda
+    fill_in "Datacompra", with: @produto.dataCompra
+    fill_in "Datavencimento", with: @produto.dataVencimento
+    fill_in "Nome", with: @produto.nome
+    fill_in "Precocompra", with: @produto.precoCompra
+    fill_in "Precovenda", with: @produto.precoVenda
+    fill_in "Quantidade", with: @produto.quantidade
     click_on "Create Produto"
 
     assert_text "Produto was successfully created"
@@ -30,12 +30,14 @@ class ProdutosTest < ApplicationSystemTestCase
     visit produtos_url
     click_on "Edit", match: :first
 
-    fill_in "Categoria", with: @produto.categoria
-    fill_in "Codigo", with: @produto.codigo
-    fill_in "Descricao", with: @produto.descricao
-    fill_in "Marca", with: @produto.marca
-    fill_in "Preco compra", with: @produto.preco_compra
-    fill_in "Preco venda", with: @produto.preco_venda
+
+    fill_in "Datacompra", with: @produto.dataCompra
+    fill_in "Datavencimento", with: @produto.dataVencimento
+    fill_in "Nome", with: @produto.nome
+    fill_in "Precocompra", with: @produto.precoCompra
+    fill_in "Precovenda", with: @produto.precoVenda
+    fill_in "Quantidade", with: @produto.quantidade
+
     click_on "Update Produto"
 
     assert_text "Produto was successfully updated"

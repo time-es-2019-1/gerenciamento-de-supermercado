@@ -10,38 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_10_002323) do
 
-  create_table "clientes", force: :cascade do |t|
-    t.string "nome"
-    t.string "cpf"
-    t.date "dataNascimento"
-    t.string "numTelefone"
-    t.float "limiteCredito"
-    t.date "dataCadastro"
-    t.integer "funcionario_id"
-    t.integer "endereco_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["endereco_id"], name: "index_clientes_on_endereco_id"
-    t.index ["funcionario_id"], name: "index_clientes_on_funcionario_id"
-  end
+ActiveRecord::Schema.define(version: 2019_06_17_002357) do
 
   create_table "enderecos", force: :cascade do |t|
     t.string "bairro"
-    t.string "rua"
+    t.string "nomeCidade"
+    t.string "nomeRua"
     t.string "cep"
-    t.string "cidade"
-    t.integer "numero"
+    t.integer "numResidencia"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "funcionarios", force: :cascade do |t|
+  create_table "pessoas", force: :cascade do |t|
     t.string "nome"
     t.string "cpf"
     t.date "dataNascimento"
     t.string "numTelefone"
+    t.string "discriminador"
+    t.float "limiteCredito"
+    t.date "dataCadastro"
     t.float "salario"
     t.string "cargo"
     t.date "dataAdimissao"
@@ -49,36 +38,16 @@ ActiveRecord::Schema.define(version: 2019_06_10_002323) do
     t.integer "endereco_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["endereco_id"], name: "index_funcionarios_on_endereco_id"
-  end
-
-  create_table "item_vendas", force: :cascade do |t|
-    t.integer "produto_id"
-    t.integer "venda_id"
-    t.integer "quantidade"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["produto_id"], name: "index_item_vendas_on_produto_id"
-    t.index ["venda_id"], name: "index_item_vendas_on_venda_id"
+    t.index ["endereco_id"], name: "index_pessoas_on_endereco_id"
   end
 
   create_table "produtos", force: :cascade do |t|
-    t.string "marca"
-    t.string "categoria"
-    t.text "descricao"
-    t.float "preco_venda"
-    t.float "preco_compra"
+    t.string "nome"
     t.integer "quantidade"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "vendas", force: :cascade do |t|
-    t.integer "cliente_id"
-    t.integer "funcionario_id"
-    t.float "valor_total"
-    t.float "valor_pago"
-    t.date "data"
+    t.float "precoCompra"
+    t.float "precoVenda"
+    t.date "dataCompra"
+    t.date "dataVencimento"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["cliente_id"], name: "index_vendas_on_cliente_id"

@@ -12,33 +12,35 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :marca %>
-    <%= form.text_field :marca %>
-  </div>
 
-  <div class="field">
-    <%= form.label :categoria %>
-    <%= form.text_field :categoria %>
-  </div>
-
-  <div class="field">
-    <%= form.label :descricao %>
-    <%= form.text_area :descricao %>
-  </div>
-
-  <div class="field">
-    <%= form.label :preco_venda %>
-    <%= form.text_field :preco_venda %>
-  </div>
-
-  <div class="field">
-    <%= form.label :preco_compra %>
-    <%= form.text_field :preco_compra %>
+    <%= form.label :nome %>
+    <%= form.text_field :nome %>
   </div>
 
   <div class="field">
     <%= form.label :quantidade %>
-    <%= form.number_field :quantidade %>
+    <%= form.text_field :quantidade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :precoCompra %>
+    <%= form.text_field :precoCompra %>
+  </div>
+
+  <div class="field">
+    <%= form.label :precoVenda %>
+    <%= form.text_field :precoVenda %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dataCompra %>
+    <%= form.date_select :dataCompra %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dataVencimento %>
+    <%= form.date_select :dataVencimento %>
+
   </div>
 
   <div class="actions">

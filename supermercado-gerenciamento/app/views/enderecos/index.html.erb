@@ -6,10 +6,12 @@
   <thead>
     <tr>
       <th>Bairro</th>
-      <th>Rua</th>
+
+      <th>Nomecidade</th>
+      <th>Nomerua</th>
       <th>Cep</th>
-      <th>Cidade</th>
-      <th>Numero</th>
+      <th>Numresidencia</th>
+
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,10 +20,12 @@
     <% @enderecos.each do |endereco| %>
       <tr>
         <td><%= endereco.bairro %></td>
-        <td><%= endereco.rua %></td>
+
+        <td><%= endereco.nomeCidade %></td>
+        <td><%= endereco.nomeRua %></td>
         <td><%= endereco.cep %></td>
-        <td><%= endereco.cidade %></td>
-        <td><%= endereco.numero %></td>
+        <td><%= endereco.numResidencia %></td>
+
         <td><%= link_to 'Show', endereco %></td>
         <td><%= link_to 'Edit', edit_endereco_path(endereco) %></td>
         <td><%= link_to 'Destroy', endereco, method: :delete, data: { confirm: 'Are you sure?' } %></td>

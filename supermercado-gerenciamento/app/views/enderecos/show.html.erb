@@ -6,8 +6,14 @@
 </p>
 
 <p>
-  <strong>Rua:</strong>
-  <%= @endereco.rua %>
+
+  <strong>Nomecidade:</strong>
+  <%= @endereco.nomeCidade %>
+</p>
+
+<p>
+  <strong>Nomerua:</strong>
+  <%= @endereco.nomeRua %>
 </p>
 
 <p>
@@ -16,13 +22,9 @@
 </p>
 
 <p>
-  <strong>Cidade:</strong>
-  <%= @endereco.cidade %>
-</p>
+  <strong>Numresidencia:</strong>
+  <%= @endereco.numResidencia %>
 
-<p>
-  <strong>Numero:</strong>
-  <%= @endereco.numero %>
 </p>
 
 <%= link_to 'Edit', edit_endereco_path(@endereco) %> |
