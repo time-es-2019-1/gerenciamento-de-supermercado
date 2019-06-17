@@ -17,7 +17,9 @@ class ProdutosControllerTest < ActionDispatch::IntegrationTest
 
   test "should create produto" do
     assert_difference('Produto.count') do
+
       post produtos_url, params: { produto: { dataCompra: @produto.dataCompra, dataVencimento: @produto.dataVencimento, nome: @produto.nome, precoCompra: @produto.precoCompra, precoVenda: @produto.precoVenda, quantidade: @produto.quantidade } }
+
     end
 
     assert_redirected_to produto_url(Produto.last)
@@ -34,7 +36,9 @@ class ProdutosControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update produto" do
+
     patch produto_url(@produto), params: { produto: { dataCompra: @produto.dataCompra, dataVencimento: @produto.dataVencimento, nome: @produto.nome, precoCompra: @produto.precoCompra, precoVenda: @produto.precoVenda, quantidade: @produto.quantidade } }
+
     assert_redirected_to produto_url(@produto)
   end
 

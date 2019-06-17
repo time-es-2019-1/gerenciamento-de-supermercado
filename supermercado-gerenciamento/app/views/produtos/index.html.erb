@@ -5,12 +5,14 @@
 <table>
   <thead>
     <tr>
+
       <th>Nome</th>
       <th>Quantidade</th>
       <th>Precocompra</th>
       <th>Precovenda</th>
       <th>Datacompra</th>
       <th>Datavencimento</th>
+
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,12 +20,14 @@
   <tbody>
     <% @produtos.each do |produto| %>
       <tr>
+
         <td><%= produto.nome %></td>
         <td><%= produto.quantidade %></td>
         <td><%= produto.precoCompra %></td>
         <td><%= produto.precoVenda %></td>
         <td><%= produto.dataCompra %></td>
         <td><%= produto.dataVencimento %></td>
+
         <td><%= link_to 'Show', produto %></td>
         <td><%= link_to 'Edit', edit_produto_path(produto) %></td>
         <td><%= link_to 'Destroy', produto, method: :delete, data: { confirm: 'Are you sure?' } %></td>

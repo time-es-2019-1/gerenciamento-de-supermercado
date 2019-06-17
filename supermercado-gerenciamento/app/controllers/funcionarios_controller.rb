@@ -5,12 +5,16 @@ class FuncionariosController < ApplicationController
   # GET /clientes
   # GET /clientes.json
   def index
+
     @funcionario =Funcionario.all
+
   end
 
   # GET /clientes/1
   # GET /clientes/1.json
   def show
+    @funcionarios = Funcionario.all
+    @enderecos = Endereco.all
   end
 
   # GET /clientes/new
@@ -27,7 +31,9 @@ class FuncionariosController < ApplicationController
   # POST /clientes.json
   def create
     @funcionario = Funcionario.new(funcionario_params)
+
     @funcionario.discriminador ="Funcionario"
+
     respond_to do |format|
       if @funcionario.save
         format.html { redirect_to @funcionario, notice: 'Funcionario was successfully created.' }

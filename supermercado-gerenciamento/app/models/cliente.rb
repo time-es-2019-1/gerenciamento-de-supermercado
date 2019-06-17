@@ -1,5 +1,9 @@
+
 class Cliente < Pessoa
+
   belongs_to :funcionario
+  belongs_to :endereco
+
 
   #Validates
 

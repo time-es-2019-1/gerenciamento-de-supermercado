@@ -12,6 +12,7 @@ class CreatePessoas < ActiveRecord::Migration[5.2]
       t.string :cargo
       t.date :dataAdimissao
       t.date :dataPagamento
+
       t.references :endereco, index:true
       t.timestamps
     end

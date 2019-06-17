@@ -30,12 +30,14 @@ class ProdutosTest < ApplicationSystemTestCase
     visit produtos_url
     click_on "Edit", match: :first
 
+
     fill_in "Datacompra", with: @produto.dataCompra
     fill_in "Datavencimento", with: @produto.dataVencimento
     fill_in "Nome", with: @produto.nome
     fill_in "Precocompra", with: @produto.precoCompra
     fill_in "Precovenda", with: @produto.precoVenda
     fill_in "Quantidade", with: @produto.quantidade
+
     click_on "Update Produto"
 
     assert_text "Produto was successfully updated"

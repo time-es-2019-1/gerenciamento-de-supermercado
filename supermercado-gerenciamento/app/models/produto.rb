@@ -1,2 +1,3 @@
 class Produto < ApplicationRecord
+
 end

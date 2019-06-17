@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 2019_06_17_002357) do
 
   create_table "enderecos", force: :cascade do |t|
@@ -49,6 +50,8 @@ ActiveRecord::Schema.define(version: 2019_06_17_002357) do
     t.date "dataVencimento"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["cliente_id"], name: "index_vendas_on_cliente_id"
+    t.index ["funcionario_id"], name: "index_vendas_on_funcionario_id"
   end
 
 end
