@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  quantidade: 
+  precoCompra: 1.5
+  precoVenda: 1.5
+  dataCompra: 2019-06-16
+  dataVencimento: 2019-06-16
+
+two:
+  nome: MyString
+  quantidade: 
+  precoCompra: 1.5
+  precoVenda: 1.5
+  dataCompra: 2019-06-16
+  dataVencimento: 2019-06-16
